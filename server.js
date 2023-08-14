@@ -58,7 +58,6 @@ const port = process.env.PORT || 8000;
 const start = async () => {
   try {
     connectDB(process.env.MONGO_URL);
-    console.log(process.env.MONGO_URL);
     app.listen(port, () => {
       console.log("Server connect to mongodb and running at Port ", port);
     });
